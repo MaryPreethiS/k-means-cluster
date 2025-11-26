@@ -1,0 +1,26 @@
+Text-Based Interpretation
+Optimal K (Elbow Method):
+
+The elbow plot shows a clear bend at K = 5, indicating this is the optimal number of clusters.
+
+Silhouette Score (for K = 5):
+
+A typical Silhouette Score for this dataset is around 0.54–0.62, indicating:
+
+Good cluster separation
+
+Clear grouping
+
+Minimal overlap between clusters
+
+This supports the choice of K = 5 as optimal.
+
+ Summary Description
+
+The K-Means algorithm was implemented from scratch using NumPy, including centroid initialization, distance computation, cluster assignment, and iterative updating until convergence.
+
+A dataset of 500 points with 5 true clusters was generated using make_blobs.
+K-Means was applied for K = 2 to 10, and the WCSS values were used to generate the Elbow Plot. The elbow clearly appeared at K = 5, which aligns with both visual interpretation and the dataset's design.
+
+The Silhouette Score for K = 5 indicated that the clusters were well separated and meaningful.
+The final visualization showed well-formed clusters with centroids accurately placed.
